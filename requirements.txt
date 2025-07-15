@@ -1,3 +1,6 @@
 playwright
 python-dotenv
 supabase
+aiohttp
+httpx
+pydantic
