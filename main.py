@@ -27,11 +27,7 @@ async def parse_all_categories():
     logger.info(f"Обработано категорий: {len(leaf_categories)}")
 
 async def main():
-    while True:
-        logger.info("=== Новый цикл парсинга ===")
-        await parse_all_categories()
-        logger.info("Парсер уснул на 1 час...")
-        await asyncio.sleep(3600)
+    await parse_all_categories()
 
 if __name__ == "__main__":
     asyncio.run(main())
